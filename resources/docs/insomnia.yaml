@@ -1,0 +1,220 @@
+_type: export
+__export_format: 4
+__export_date: 2021-02-19T12:40:55.868Z
+__export_source: insomnia.desktop.app:v2020.5.2
+resources:
+  - _id: req_8092b60b3bc849d3ad53dcefb74f865a
+    parentId: wrk_909f1981e363465685d26f286ae2caff
+    modified: 1613378076216
+    created: 1613378053228
+    url: "{{ _.baseUrl }}/user/delete/5"
+    name: delete user
+    description: ""
+    method: DELETE
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1613378053228
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: wrk_909f1981e363465685d26f286ae2caff
+    parentId: null
+    modified: 1613110000778
+    created: 1613110000778
+    name: Lumen-blog
+    description: ""
+    scope: null
+    _type: workspace
+  - _id: req_363350eb7f44469f928571a9d61d0ce0
+    parentId: wrk_909f1981e363465685d26f286ae2caff
+    modified: 1613725449971
+    created: 1613374185068
+    url: "{{ _.baseUrl }}/user/update/16"
+    name: update user
+    description: ""
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"name": "shabbu",
+        	"email": "aafiya+update@ranium.in"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        description: ""
+        id: pair_28215fb62aa0460381e8f256e97f9b95
+      - name: Accept
+        value: application/json
+        description: ""
+        id: pair_acbcb3ee0ca94b5884891b29af7a0ed5
+    authentication: {}
+    metaSortKey: -1613374185068
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_93264e3ed3db49e7b2f33f0d731dbf1e
+    parentId: wrk_909f1981e363465685d26f286ae2caff
+    modified: 1613556708342
+    created: 1613371693032
+    url: "{{ _.baseUrl }}/user/store"
+    name: store user
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"name": "aafiya",
+        	"email": "aafiya+1@ranium.in"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_09bab77a34f0412f90aba734d6437b59
+      - name: Accept
+        value: application/json
+        description: ""
+        id: pair_dce95da2a3334350910e8c17511e9f18
+    authentication: {}
+    metaSortKey: -1613371693032
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_f4024c4dabd04046ae0e3730177ad729
+    parentId: wrk_909f1981e363465685d26f286ae2caff
+    modified: 1613371141364
+    created: 1613370697423
+    url: "{{ _.baseUrl }}/user/1"
+    name: Get user
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1613370697423
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_2c4e2650804f4cccbaf7f0403d1b3826
+    parentId: wrk_909f1981e363465685d26f286ae2caff
+    modified: 1613370521212
+    created: 1613370511220
+    url: "{{ _.baseUrl }}/users"
+    name: Get all users
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1613370511220
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_fbdb9e1595c14a3d9233d200d773f4db
+    parentId: wrk_909f1981e363465685d26f286ae2caff
+    modified: 1613110085227
+    created: 1613110079565
+    url: "{{ _.baseUrl }}"
+    name: home
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1613110079566
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: env_5f8fc0c3041db70efe27f9e996dcf3dbc3660729
+    parentId: wrk_909f1981e363465685d26f286ae2caff
+    modified: 1613556692160
+    created: 1613110000898
+    name: Base Environment
+    data:
+      baseUrl: http://localhost:8000/api
+    dataPropertyOrder:
+      "&":
+        - baseUrl
+    color: null
+    isPrivate: false
+    metaSortKey: 1613110000898
+    _type: environment
+  - _id: jar_5f8fc0c3041db70efe27f9e996dcf3dbc3660729
+    parentId: wrk_909f1981e363465685d26f286ae2caff
+    modified: 1613133876921
+    created: 1613110000901
+    name: Default Jar
+    cookies:
+      - key: XSRF-TOKEN
+        value: eyJpdiI6Im1aTzJ6aE5EbTRWY1UzLy9mWXg5b1E9PSIsInZhbHVlIjoiSXR2d25BYitueXVQTXFZYit1K1VZUnNaYlNULy9GU2RlbFl3QzNzdVJDT3BjczZXRG4xQ09ydHpRMWVGMmR2K0ZULzllb3lIVXJ3aEF2Z1BhMDJKbHNBcVd6Qm0rUkV0Q3RIUHpIQmtLTFlOWnBwMS9HdldGbVFwRXlna2ZzVlgiLCJtYWMiOiI2MGY4ZTc2YzU4MjMxZjM5NDU1MzNiNDEwN2JiOWQyYmQ2ZjMzYjE2MDI0MzE4Y2NkYTRiZTIyZTBmMDRhZjAyIn0%3D
+        expires: 2021-02-12T14:44:36.000Z
+        maxAge: 7200
+        domain: localhost
+        path: /
+        extensions:
+          - samesite=lax
+        hostOnly: true
+        creation: 2021-02-12T12:44:36.870Z
+        lastAccessed: 2021-02-12T12:44:36.870Z
+        id: "9369152762644373"
+      - key: detected_global_session
+        value: eyJpdiI6IkhrTXlXSHFoM2l2VDFEWXA5RnVvdHc9PSIsInZhbHVlIjoiZVU0cmJJdk51Z2l5L0FSVDk4eCs1SC9qdTNwOFJYYWZvc0FYNVQ1cE9WRjFmWnJpVzFFWDh1NGFtQ1FhdE1Tc2JrY0E4SUE5TStoUDVmNXBZbC9DaHNERUZJNjVmU0JXSGx1Nk51Y2taYXN3b1ROS2tuWHBmcEI2K2NZQ1NSWHYiLCJtYWMiOiIzZDAyZDE3MjBkN2RmNjk3MWJjNWEzZWQ0ZDk3YWZhM2E5MjE2NDlkYTEwZGFjZWQ1ZTFjNTJjYTYzNTEwZDE3In0%3D
+        expires: 2021-02-12T14:44:36.000Z
+        maxAge: 7200
+        domain: localhost
+        path: /
+        httpOnly: true
+        extensions:
+          - samesite=lax
+        hostOnly: true
+        creation: 2021-02-12T12:44:36.870Z
+        lastAccessed: 2021-02-12T12:44:36.870Z
+        id: "5816654490855591"
+    _type: cookie_jar
+  - _id: spc_327df41c639045e8b7e7792733023d8c
+    parentId: wrk_909f1981e363465685d26f286ae2caff
+    modified: 1613110000784
+    created: 1613110000784
+    fileName: Lumen-blog
+    contents: ""
+    contentType: yaml
+    _type: api_spec
